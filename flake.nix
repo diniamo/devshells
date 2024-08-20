@@ -39,8 +39,16 @@
     };
 
     nixConfig = {
-      extra-substituters = ["https://cuda-maintainers.cachix.org"];
-      extra-trusted-public-keys = ["cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="];
+      extra-substituters = [
+        "https://cache.garnix.io"
+
+        "https://cuda-maintainers.cachix.org"
+      ];
+      extra-trusted-public-keys = [
+        "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+
+        "cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="
+      ];
     };
   };
 }
